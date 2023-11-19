@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    color: #5D5D7D;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-container {
+    margin-left: 450px;
+    margin-top: 250px;
+}
+
+.left-container h1 {
+    font-size: 70px;
+    width: 368px;
+    margin-bottom: 15px;
+}
+
+.left-container p {
+    font-size: 28px;
+    opacity: .6;
+    width: 540px;
+    margin-bottom: 15px;
+}
+
+.left-container button {
+    color: #fff;
+    font-size: 24px;
+    width: 269px;
+    height: 62px;
+    border-radius: 30px;
+    background-color: #9499EA;
+    border: none;
+    box-shadow: 0 10px 0 #9499EA19;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+.left-container button:hover {
+    opacity: .7;
+}
+
+.right-container {
+    background-color: #5D5D7D33;
+    height: 100vh;
+}
+
+.right-container ul {
+    display: flex;
+    margin: 24px 58px 0 58px;
+}
+
+.right-container ul li {
+    margin: 0 20px;
+}
+
+.right-container ul li a {
+    font-size: 28px;
+    color: #5D5D7D;
+}
+
+.right-container ul li a:hover {
+    opacity: .5;
+}
+
+.right-container img {
+    height: 561px;
+    position: relative;
+    top: 200px;
+    right: 130px;
+}
+
+
+
+@media (max-width:375px) {
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .right-container header {
+        display: none;
+    }
+
+    .left-container {
+        margin: 0;
+        height: 50vh;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left-container h1 {
+        font-size: 36px;
+        width: 220px;
+        margin: 30px 53px 15px 54px;
+    }
+
+    .left-container p {
+        font-size: 14px;
+        width: 296px;
+        margin: 15px 39px 15px 40px;
+    }
+
+    .right-container {
+        margin: 0;
+        height: 50vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right-container img {
+        height: 80%;
+        position: static;
+    }
+}
